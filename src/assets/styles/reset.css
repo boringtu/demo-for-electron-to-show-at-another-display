@@ -1,0 +1,194 @@
+* {
+	box-sizing: border-box;
+	outline: 0;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 20px;
+	font-family: Source Han Sans, Microsoft YaHei, Arial;
+	overflow: hidden;
+	overflow-x: auto;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	margin: 0;
+}
+p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+a:active,
+a:focus {
+	outline: none;
+}
+
+menu,
+ol,
+ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+fieldset,
+img {
+	border: 0;
+}
+
+legend {
+	display: none;
+}
+
+address,
+cite,
+dfn,
+em,
+var {
+	font-style: normal;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: 'courier new', courier, monospace;
+}
+
+input,
+textarea {
+	-webkit-appearance: none;
+}
+
+input,
+button,
+textarea,
+select {
+	font-size: 100%;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+button {
+	cursor: pointer;
+}
+
+.clear {
+	zoom: 1;
+}
+.clear:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+@keyframes icon-spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(359deg);
+	}
+}
+.icon-spin {
+	animation: 2s linear 0s normal none infinite running icon-spin;
+}
+
+.icon-fast {
+	animation-duration: 1s;
+}
+
+.icon-pulse {
+	animation: 1s steps(8) 0s normal none infinite running icon-spin;
+}
+
+/* element UI reset part */
+.el-input__inner {
+	color: #333;
+}
+
+.el-message-box {
+	min-width: 500px;
+}
+.el-message-box__header {
+	min-height: 54px;
+}
+.el-message-box__headerbtn {
+	font-size: 20px;
+}
+.el-message-box__headerbtn .el-message-box__close {
+	color: #666;
+}
+.el-message-box__container {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	padding-bottom: 36px;
+}
+.el-message-box__status {
+	position: relative;
+	top: unset;
+	transform: unset;
+	margin-right: 10px;
+}
+.el-message-box__message {
+	padding: 0;
+}
+.el-message-box__status + .el-message-box__message {
+	padding: 0;
+}
+.el-message-box__message p {
+	color: #000;
+	font-size: 24px;
+	line-height: 1.2em;
+	font-weight: 400;
+}
+.el-message-box__btns {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 20px;
+}
+.el-message-box__btns button {
+	min-width: 104px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 12px;
+	font-size: 14px;
+	font-weight: 400;
+}
+.el-message-box__btns button.el-button + button.el-button {
+	margin-left: 20px;
+}
+
+.el-select__tags {
+	cursor: pointer;
+}
+.el-select__tags .el-tag {
+	cursor: auto;
+}
+
+.el-form-item__content > .el-input,
+.el-form-item__content > .el-select {
+	width: 100%;
+}

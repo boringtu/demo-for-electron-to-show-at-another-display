@@ -1,0 +1,49 @@
+{
+  "name": "classic-mini-game-collection-vue2",
+  "version": "0.1.0",
+  "private": true,
+  "main": "app.js",
+  "description": "测试在另一个显示器中弹出新窗口，且可控制该窗口显示指定页面",
+  "author": "BoringTu",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "gen-font": "node ./fontmin",
+    "start": "cross-env NODE_ENV=development electron-forge start",
+    "package": "electron-forge package",
+    "make:darwin": "cross-env NODE_ENV=production electron-forge make --platform=darwin",
+    "make:win32": "cross-env NODE_ENV=production electron-forge make --arch=x64 --platform=win32"
+  },
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "electron-squirrel-startup": "^1.0.0",
+    "element-ui": "^2.15.14",
+    "lodash": "^4.17.21",
+    "moment": "^2.30.1",
+    "uuid": "^9.0.1",
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.1"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.4.2",
+    "@electron-forge/maker-deb": "^6.4.2",
+    "@electron-forge/maker-rpm": "^6.4.2",
+    "@electron-forge/maker-squirrel": "^6.4.2",
+    "@electron-forge/maker-zip": "^6.4.2",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.4.2",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/language-plugin-pug": "^1.8.27",
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.2",
+    "electron": "^29.1.0",
+    "electron-reloader": "^1.2.3",
+    "fontmin": "^1.0.1",
+    "pug": "^3.0.2",
+    "pug-plain-loader": "^1.1.0",
+    "sass": "^1.32.7",
+    "sass-loader": "^12.0.0",
+    "vue-template-compiler": "^2.6.14"
+  }
+}
